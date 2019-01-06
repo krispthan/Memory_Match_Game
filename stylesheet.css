@@ -144,7 +144,7 @@ h5 {
     top: 10px;
 }
 
-.painting-pic {
+.front-of-pic {
     text-align: center;
     position: relative;
     width: 100%;
@@ -316,20 +316,25 @@ h2,
     height:auto;
     border-radius: 10px/30px; 
     position:relative;
-    margin-left:92%;
-    bottom:136px;
+    
+}
+#to-go-about-me-section-container{
+    position:absolute;
+    right:0;
+    top:0;
+    padding:25px; 
+    text-align:center;
+    z-index:1;
+
 }
 .to-go-about-me-page:hover{
     filter:drop-shadow(gold 3px 3px 5px);
-   
 }
 .subtitle-about-me{
     color:white;
     font-size:15px;
-    bottom:142px;
     position:relative;
     font-family: 'Orbitron', sans-serif;
-    left: 75%;
 }
 .about-me-paragraph{
     font-size: 20px;
@@ -346,7 +351,7 @@ h2,
 }
 
 
-h6{
+#click-pic-bio-subheader{
     font-size: 15px;
     position:relative;
     left:29%;

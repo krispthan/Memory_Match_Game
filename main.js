@@ -15,6 +15,7 @@ function initializeGame(){
   stopGameClickHandler();
   initializeClickHandlers();
   typeWriter();
+
 }
 
 //click handlers:
@@ -100,6 +101,7 @@ function startGame() {
   $('.header').addClass('active');
   $('#winning-alert').removeClass('active');
   $('#losing-alert').removeClass('active');
+  playAudio();
 }
 
 function stopGame() {
@@ -265,7 +267,7 @@ function startTimer() {
       lockAllCards();
       losingCondition();
     }
-  }, 1000);
+  }, 2000);
 }
 
 function stopTimer() {
@@ -331,5 +333,13 @@ function toggleAboutMeParagraph(){
 
 function flipAboutMePic(){
   $('#about-me-pic').toggleClass('animateAboutMeFlipCard');
-
-  //soundtrack
+}
+//soundtrack
+function playAudio(){
+  var playPromise = document.querySelector('#bsgaudio').play();
+  if (playPromise !== undefined) {
+    playPromise.then(function() {
+    }).catch(function(error) {
+    });
+  }
+}

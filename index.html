@@ -28,6 +28,12 @@
     </video>
     <h1 class='header'> </h1>
     <!--Winning/Losing-->
+    <div id="to-go-about-me-section-container">
+            <a href="aboutme.html">
+                <img class="to-go-about-me-page" src="Images/aboutme.jpg">
+                <h6 class="subtitle-about-me">About Me</h6>
+            </a>
+           </div>
     <h3 id="winning-alert">Congrats, You Never Seem to Fail Me!</h3>
     <h3 id="losing-alert">Sorry, consider you have failed, Try Again!</h3>
     <!--Game Area-->
@@ -37,10 +43,8 @@
             <div class="start-game active"></div>
         </div>
         <div class="card-game-section">
-            <div>
-                <a href="aboutme.html"><img class="to-go-about-me-page" src="Images/aboutme.jpg"></a>
-               </div>
-               <h6 class="subtitle-about-me">About Me</h6>
+            
+        
             <h2 id="time-left-header">Time Left:<span class="timer">00</span></h2>
             <!--Score Area-->
             <div class="score-container">
@@ -74,8 +78,8 @@
                 
         </div>
         <!--SoundTrack-->
-        <audio autoplay="autoplay">
-            <source src="https://freemusicarchive.org/music/download/699f063a5dbe3c868ba73e566ee82275825970d0" />     
+        <audio id="bsgaudio" autoplay="autoplay">
+            <source src="song/bsg.mp3"/>     
         </audio>
 
     <script src="main.js"></script>
