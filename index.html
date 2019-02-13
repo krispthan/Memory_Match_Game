@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <title>Memory Match</title>
+</head>
+
+<body>
+
+    <video autoplay="" loop="" muted="" poster="images/background.jpg" class="backgroundVideo">
+        <source src="images/stars.mp4" type="video/mp4">
+    </video>
+    <h1 class='header'> </h1>
+    <!--Winning/Losing-->
+    <div id="to-go-about-me-section-container">
+            <a href="aboutme.html">
+                <img class="to-go-about-me-page" src="images/aboutme.jpg">
+                <h6 class="subtitle-about-me">About Me</h6>
+            </a>
+           </div>
+    <h3 id="winning-alert">Congrats, You Never Seem to Fail Me!</h3>
+    <h3 id="losing-alert">Sorry, consider you have failed, Try Again!</h3>
+    <!--Game Area-->
+    <div id="overall-game-container">
+        <div id="splashscreen" class="active">
+            <h5>Press To Start</h5>
+            <div class="start-game active"></div>
+        </div>
+        <div class="card-game-section">
+            
+        
+            <h2 id="time-left-header">Time Left:<span class="timer">00</span></h2>
+            <!--Score Area-->
+            <div class="score-container">
+                <h3 class="scores" id="correct-scores">Correct:<span id="correct-display"></span></h3>
+                <h3 class="scores" id="incorrect-scores">Incorrect:<span id="incorrect-display"></span></h3>
+            </div>
+            <!--Reset/Stop Game-->
+            <div class="bottom-container">
+                <h3 id="reset-game">Reset Game</h3>
+                <h3 id="stop-game">Stop Game</h3>
+            </div>
+            <div class="game-container" id="game-area">
+            </div>
+        </div>
+        </div>
+                <!-- Game Modal-->
+        <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p class="modal-win-text">Congrats, You Never Seem to Fail Me!
+                        Play Again?
+                    
+                    </p>
+                    <p class="modal-lose-text">
+                            Sorry, consider you have failed.
+                            Play Again?
+                    </p>
+                    <button type="button" class="yes-btn btn btn-outline-light">Yes</button>
+                    <button type="button" class="no-btn btn btn-outline-dark">No</button>
+                    
+                </div>
+                
+        </div>
+        <!--SoundTrack-->
+        <audio id="bsgaudio" autoplay="autoplay">
+            <source src="song/bsg.mp3"/>     
+        </audio>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
